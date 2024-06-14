@@ -1,10 +1,14 @@
+"use client";
 
-export default function Tabs() {
+import React from 'react';
+import styles from '../tab.module.css';
+
+export default function Tabs({ setComponent }) {  // Destructure props to get setComponent directly
   return (
-    <div className="mt-20 flex justify-center items-center mb-20">
-      <button className="text-center font-medium py-2 px-6 rounded-lg border-none text-sm bg-white text-black">Schemes</button>
-      <button className="text-center font-medium py-2 px-6 rounded-lg border-none text-sm bg-white text-black">Job Openings</button>
-      <button className="text-center font-medium py-2 px-6 rounded-lg border-none text-sm bg-white text-black">Scholarships</button>
+    <div className={styles.tabsSection}>
+      <button className={styles.tabBtn} onClick={() => setComponent("Schemes")}>Schemes</button>
+      <button className={styles.tabBtn} onClick={() => setComponent("Job Openings")}>Job Openings</button>
+      <button className={styles.tabBtn} onClick={() => setComponent("Scholarships")}>Scholarships</button>
     </div>
   );
 }

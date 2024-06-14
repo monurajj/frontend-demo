@@ -4,14 +4,14 @@ const Apply = () => {
   return (
     <div className="min-h-screen bg-white relative">
       {/* Back Button */}
-      <div className="text-black">
-        <button className="absolute top-4 left-4 text-black py-2 px-4 rounded flex items-center">
-          <FaArrowLeft className="h-5 w-5 mr-2" />
+      <div className="text-black ">
+        <button className="relative top-4 left-4 text-black py-2 px-4 rounded flex items-center transition duration-300 ease-in-out hover:font-bold">
+          <FaArrowLeft className="h-5 w-5 mr-2 " />
           Back
         </button>
       </div>
 
-      <div className="pt-20 text-black ml-[20px] mr-[10px] ml-[100px]">
+      <div className="pt-20 text-black mr-[110px] mr-[10px] ml-[110px]">
         {/* Div one with share scheme */}
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -22,7 +22,7 @@ const Apply = () => {
               Last updates on 14.06.2024
             </p>
           </div>
-          <button className="flex items-center py-2 px-4 rounded">
+          <button className="flex items-center py-2 px-4 rounded transition duration-300 ease-in-out hover:font-bold">
             <FaShare className="h-5 w-5 mr-2" />
             Share scheme
           </button>
